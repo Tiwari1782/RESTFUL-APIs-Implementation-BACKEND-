@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create new post</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">QuoraClone</div>
+
+      <div class="nav-links">
+        <a href="/posts">Home</a>
+        <a href="/posts/new">Create</a>
+        <button id="darkToggle">🌙</button>
+      </div>
+    </nav>
+
+    <form method="post" action="/posts">
+      <input name="username" placeholder="enter username" /> <br /><br />
+      <textarea name="content" placeholder="write your content" id=""></textarea
+      ><br /><br />
+      <button>Submit</button>
+    </form>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

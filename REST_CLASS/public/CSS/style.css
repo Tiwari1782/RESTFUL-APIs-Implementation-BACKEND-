@@ -1,0 +1,167 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    background-color: #f6f7f8;
+    padding: 30px;
+    color: #2e2e2e;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #8b0000;
+}
+
+/* ===== POST CARD ===== */
+.post {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== USERNAME ===== */
+.user {
+    color: #8b0000;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+/* ===== CONTENT ===== */
+.content,
+.post h4 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ===== LINKS ===== */
+a {
+    text-decoration: none;
+    color: #8b0000;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #6f0000;
+}
+
+/* ===== FORM ===== */
+form {
+    margin-top: 10px;
+}
+
+/* ===== INPUTS & TEXTAREA ===== */
+input,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ===== CENTER CREATE POST ===== */
+.create-post {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    background-color: #8b0000;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.create-post:hover {
+    background-color: #6f0000;
+}
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b0000;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+#darkToggle {
+    background: white;
+    color: #8b0000;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 50%;
+}
+
+/* ===== DARK MODE ===== */
+body.dark {
+    background-color: #181818;
+    color: #eaeaea;
+}
+
+body.dark .post {
+    background-color: #242424;
+    color: #eaeaea;
+}
+
+body.dark a {
+    color: #ff6b6b;
+}
+
+body.dark .navbar {
+    background-color: #121212;
+}

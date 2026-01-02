@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Edit the post</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">QuoraClone</div>
+
+      <div class="nav-links">
+        <a href="/posts">Home</a>
+        <a href="/posts/new">Create</a>
+        <button id="darkToggle">🌙</button>
+      </div>
+    </nav>
+
+    <h2>EDIT YOUR POST</h2>
+    <p>Post id : <%= post.id %></p>
+    <p>Post username : <%= post.username %></p>
+    <form action="/posts/<%= post.id %>?_method=PATCH" method="post">
+      <textarea name="content" rows="10" cols="35" id="">
+<%= post.content %></textarea
+      >
+      <button>SUBMIT</button>
+    </form>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
